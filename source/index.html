@@ -1,89 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    /* html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/320.png");
+    } */
+
+    /* @media (min-width: 760px) {
+      html {
+        background-image: url("img/760.png");
+      }
+    } */
+
+    @media (min-width: 960px) {
+      html {
+        background-image: url("pp/design.psd.png");
+      }
+    }
+  </style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
+
 <body>
-	<header>
-		<div class="wrapper">
-			<div class="logo">
-				<img class="logo_img" src="" alt="Котик на час">
-				<span class="logo_txt">Котик на час</span>
-			</div>
-			<div class="contacts">
-				<ul class="contacts__list">
-					<li class="contacts__item">
-						<a href="" class="contacts__link">Пушкинская, 28 </a>
-					</li>
-					<li class="contacts__item">
-						<a href="" class="contacts__link">+ 7 928 567 64 54</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<nav class="navbar">
-			<ul class="navbar__list">
-				<li class="navbar__item"><a href="" class="navbar__link">О нас</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Услуги</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Сертификаты</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Условия аренды</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Фото</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
-				<li class="navbar__item"><a href="" class="navbar__link">Обратный звонок</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="promo">
-			<div class="promo__slider">
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo col-xl-3">
+          <img class="logo_img" src="img/logo__img.svg" alt="Котик на час" width="53" height="55">
+          <span class="logo_txt">Котик на час</span>
+        </div>
+        <!-- <div class="contacts col-xl-5"> -->
+          <ul class="contacts__list col-xl-5">
+            <li class="contacts__item">
+              <a href="" class="contacts__link">Пушкинская, 28 </a>
+            </li>
+            <li class="contacts__item">
+              <a href="" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+    <nav class="navbar container">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="" class="navbar__link">О нас</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Услуги</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Сертификаты</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Условия аренды</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Фото</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Обратный звонок</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo__slider">
 
-			</div>
-		</section>
+      </div>
+    </section>
 
-		<section class="cats">
-			<h1 class="cats__title">Возьми домой котика</h1>
-			<ul class="cats__list">
-				<li class="cats__item">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-				<li class="cats__item">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Марта, 2 месяца </p>
-				</li>
-				<li class="cats__item cats__item--double-height">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-				<li class="cats__item cats__item--double-height">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-				<li class="cats__item">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-				<li class="cats__item">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-				<li class="cats__item">
-					<img src="" alt="" class="cats__img">
-					<p class="cats__info">Люси, 3 года</p>
-				</li>
-			</ul>
-		</section>
-	</main>
+    <section class="cats container">
+      <h1 class="cats__title">Возьми домой котика</h1>
+      <ul class="cats__list">
+        <li class="cats__item">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+        <li class="cats__item">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Марта, 2 месяца </p>
+        </li>
+        <li class="cats__item cats__item--double-height">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+        <li class="cats__item cats__item--double-height">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+        <li class="cats__item">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+        <li class="cats__item">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+        <li class="cats__item">
+          <img src="" alt="" class="cats__img">
+          <p class="cats__info">Люси, 3 года</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-	<footer>
-		<div class="footer__wrapper">
-			<p class="footer__privacy-policy">
+  <footer>
+    <div class="footer__wrapper container">
+      <p class="footer__privacy-policy">
         Политика конфиденциальности
-			</p>
-			<ul class="footer__contacts__list">
+      </p>
+      <ul class="footer__contacts__list">
         <li class="footer__contacts__item">
           <a href="" class="contacts__link">Пушкинская, 28 </a>
         </li>
@@ -91,7 +120,9 @@
           <a href="" class="contacts__link">+ 7 928 567 64 54</a>
         </li>
       </ul>
-		</div>
-	</footer>
+    </div>
+  </footer>
+  <script src="js/pixel-glass.js"></script>
 </body>
+
 </html>

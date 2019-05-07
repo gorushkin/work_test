@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: medium;
+  font-display: swap;
+  src: local("Geometria"),
+    local("Proxima Nova"),
+    url("../fonts/Geometria.woff2") format("woff2"),
+    url("../fonts/Geometria.woff") format("woff");
+}
