@@ -33,6 +33,10 @@
   grid-template-columns: 360px 360px 360px;
   grid-template-rows: 224px 224px 224px;
   grid-gap: 30px;
+
+  @media (max-width: 1200px) {
+    background: red;
+  }
 }
 
 .cats__item {
