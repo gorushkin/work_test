@@ -24,7 +24,7 @@
 
     @media (min-width: 960px) {
       html {
-        background-image: url("pp/design.psd.png");
+        background-image: url("pp/design__modal.png");
       }
     }
   </style>
@@ -43,10 +43,10 @@
         </div>
           <ul class="contacts__list col-xl-5 col-xl-offset-3 col-12">
             <li class="contacts__item">
-              <a href="" class="contacts__link">Пушкинская, 28 </a>
+              <a href="#" class="contacts__link">Пушкинская, 28 </a>
             </li>
             <li class="contacts__item">
-              <a href="" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
+              <a href="#" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
             </li>
           </ul>
       </div>
@@ -72,9 +72,9 @@
           <li class="navbar__item">
             <a href="" class="navbar__link">Контакты</a>
           </li>
-          <li class="navbar__item"
-          ><a href="" class="navbar__link navbar__link--callback">Обратный звонок</a>
-        </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link navbar__link--callback">Обратный звонок</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -93,32 +93,46 @@
         <h1 class="cats__title">Возьми домой котика</h1>
         <ul class="cats__list">
           <li class="cats__item">
-            <img src="img/cat1.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="">
+              <img src="img/cat1.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
           <li class="cats__item">
-            <img src="img/cat2.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Марта, 2 месяца</a>
+            <a href="#">
+              <img src="img/cat2.jpg" alt="" class="cats__img">
+              <p class="cats__info">Марта, 2 месяца</p>
+            </a>
           </li>
           <li class="cats__item cats__item--double-height">
-            <img src="img/cat3.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="#">
+              <img src="img/cat3.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
           <li class="cats__item cats__item--double-height2">
-            <img src="img/cat4.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="#">
+              <img src="img/cat4.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
           <li class="cats__item">
-            <img src="img/cat5.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="#">
+              <img src="img/cat5.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
           <li class="cats__item">
-            <img src="img/cat6.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="#">
+              <img src="img/cat6.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
           <li class="cats__item">
-            <img src="img/cat7.jpg" alt="" class="cats__img">
-            <a href="#" class="cats__info">Люси, 3 года</a>
+            <a href="#">
+              <img src="img/cat7.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -142,7 +156,30 @@
       <!-- </div> -->
     </div>
   </footer>
+  <div class="overlay"></div>
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказ обратного звонка</h2>
+      <form action="get" class="popup__form form">
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="name" class="form__txt">Имя</label>
+            <input type="text" class="form__input" name="name" id="name">
+          </li>
+          <li class="form__item">
+            <label for="tel" class="form__txt">Телефон</label>
+            <input type="tel" class="form__input" name="phonenumber" id="tel">
+          </li>
+          <li class="form__item">
+            <button type="submit" class="form__input form__input--btn">Отправить</button>
+          </li>
+        </ul>
+      </form>
+      <button class="popup__close" type="button" >Закрыть окно</button>
+    </div>
+  </section>
   <script src="js/pixel-glass.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

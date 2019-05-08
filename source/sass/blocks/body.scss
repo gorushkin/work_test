@@ -1,13 +1,15 @@
 body {
   min-width: 320px;
   font-family: "Geometria", sans-serif;
+  position: relative;
 }
 
 * {
   box-sizing: border-box;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
 }
 
