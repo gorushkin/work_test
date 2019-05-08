@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
   <!-- Pixel Glass -->
   <style>
-    /* html {
+    html {
       background-repeat: no-repeat;
       background-position: 50% 0;
-      background-image: url("img/320.png");
-    } */
+      /* background-image: url("img/320.png"); */
+    }
 
     /* @media (min-width: 760px) {
       html {
@@ -37,12 +37,11 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="logo col-xl-3">
+        <div class="logo col-xl-3 col-12">
           <img class="logo_img" src="img/logo__img.svg" alt="Котик на час" width="53" height="55">
           <span class="logo_txt">Котик на час</span>
         </div>
-        <!-- <div class="contacts col-xl-5"> -->
-          <ul class="contacts__list col-xl-5">
+          <ul class="contacts__list col-xl-5 col-xl-offset-3 col-12">
             <li class="contacts__item">
               <a href="" class="contacts__link">Пушкинская, 28 </a>
             </li>
@@ -50,19 +49,34 @@
               <a href="" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
             </li>
           </ul>
-        <!-- </div> -->
       </div>
     </div>
-    <nav class="navbar container">
-      <ul class="navbar__list">
-        <li class="navbar__item"><a href="" class="navbar__link">О нас</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Услуги</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Сертификаты</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Условия аренды</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Фото</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Обратный звонок</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list col-xl-12">
+          <li class="navbar__item">
+            <a href="" class="navbar__link">О нас</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Услуги</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Сертификаты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Условия аренды</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Фото</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Контакты</a>
+          </li>
+          <li class="navbar__item"
+          ><a href="" class="navbar__link navbar__link--callback">Обратный звонок</a>
+        </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
