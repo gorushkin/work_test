@@ -1,4 +1,18 @@
+@mixin tablet {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+
 body {
+  width: 100%;
   min-width: 320px;
   font-family: "Geometria", sans-serif;
   position: relative;
@@ -16,6 +30,21 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  // box-shadow: 0 0 0 3px red;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 320px;
+  }
 }
 
 .visually-hidden {

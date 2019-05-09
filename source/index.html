@@ -24,7 +24,7 @@
 
     @media (min-width: 960px) {
       html {
-        background-image: url("pp/design__modal.png");
+        background-image: url("pp/design.png");
       }
     }
   </style>
@@ -35,13 +35,12 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="logo col-xl-3 col-12">
+    <div class="container container--first">
+        <div class="logo">
           <img class="logo_img" src="img/logo__img.svg" alt="Котик на час" width="53" height="55">
           <span class="logo_txt">Котик на час</span>
         </div>
-          <ul class="contacts__list col-xl-5 col-xl-offset-3 col-12">
+          <ul class="contacts__list">
             <li class="contacts__item">
               <a href="#" class="contacts__link">Пушкинская, 28 </a>
             </li>
@@ -49,11 +48,11 @@
               <a href="#" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
             </li>
           </ul>
-      </div>
+          <button class="header__menubutton" type="button">Открыть меню</button>
     </div>
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar__list col-xl-12">
+        <ul class="navbar__list col">
           <li class="navbar__item">
             <a href="" class="navbar__link">О нас</a>
           </li>
@@ -82,8 +81,21 @@
   <main>
     <section class="promo">
       <div class="container">
-        <div class="promo__slider">
-          <img src="img/promo__img.png" alt="" width="1140" height="488">
+        <div class="swiper-container">
+          <ul class="swiper-wrapper promo__slider">
+            <li class="swiper-slide promo__item">
+              <img src="img/slide1.jpg" alt=""  width="1140" height="488">
+            </li>
+            <li class="swiper-slide promo__item">
+              <img src="img/slide2.jpg" alt=""  width="1140" height="488">
+            </li>
+            <li class="swiper-slide promo__item">
+              <img src="img/slide3.jpg" alt=""  width="1140" height="488">
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -179,7 +191,9 @@
     </div>
   </section>
   <script src="js/pixel-glass.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,12 @@
 .header {
   padding-top: 20px;
+
+  .container {
+    &--first {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .logo {
@@ -12,15 +19,15 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
 }
 
 .logo_img {
   width: 53px;
   height: 55px;
-}
-
-.logo_txt {
-  margin-right: 33px;
 }
 
 .contacts {
@@ -35,13 +42,30 @@
   margin-left: auto;
   padding: 0;
   align-items: flex-end;
-  padding-right: 35px;
-  // text-decoration: none;
+
+  @include mobile {
+    flex-direction: column;
+    position: relative;
+    display: none;
+  }
 }
 
 .contacts__item {
-  margin-left: 58px;
+  margin-left: 81px;
   width: 150px;
+  position: relative;
+
+  @include mobile {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 21px;
+      background: url("../img/icon-paw.svg") no-repeat center;
+      top: -2px;
+      left: -13px;
+    }
+  }
 }
 
 .contacts__link {
@@ -57,11 +81,32 @@
     width: 24px;
     height: 21px;
     background: url("../img/icon-paw.svg") no-repeat center;
-    top: 3px;
+    top: -2px;
     left: -13px;
+
+    @include mobile {
+      content: none;
+    }
   }
 
   &--right::before {
     left: -22px;
+  }
+}
+
+.header__menubutton {
+  display: none;
+
+  @include mobile {
+    display: block;
+    font-size: 0;
+    border: 0;
+    width: 19px;
+    height: 14px;
+    background: url("../img/menu-open.svg") no-repeat center;
+    padding: 25px;
+    position: absolute;
+    right: 15px;
+    top: 39px;
   }
 }

@@ -2,8 +2,12 @@
   padding-top: 97px;
   padding-bottom: 152px;
 
-  .container {
-    padding: 0;
+  @include tablet {
+    padding-top: 30px;
+  }
+
+  @include mobile {
+    padding-bottom: 50px;
   }
 }
 
@@ -12,6 +16,10 @@
   text-align: center;
   position: relative;
   margin-bottom: 71px;
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
 
   &::after {
     position: absolute;
@@ -34,8 +42,15 @@
   grid-template-rows: 224px 224px 224px;
   grid-gap: 30px;
 
-  @media (max-width: 1200px) {
-    background: red;
+  @include tablet {
+    grid-template-columns: 233px 233px 233px;
+    grid-template-rows: 145px 145px 145px;
+    grid-gap: 19.4px 10px;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
   }
 }
 
