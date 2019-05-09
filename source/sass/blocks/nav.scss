@@ -77,4 +77,9 @@
     color: #ffffff;
     text-decoration: none;
   }
+
+  &--callback:hover {
+    background-color: #6d5cad;
+    background-image: linear-gradient(to left, #7ac398 0%, #01abce 100%);
+  }
 }
