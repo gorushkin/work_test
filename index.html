@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* background-image: url("img/320.png"); */
+    }
+
+    /* @media (min-width: 760px) {
+      html {
+        background-image: url("img/760.png");
+      }
+    } */
+
+    @media (min-width: 960px) {
+      html {
+        background-image: url("pp/design.png");
+      }
+    }
+  </style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--first">
+        <div class="logo">
+          <img class="logo_img" src="img/logo__img.svg" alt="Котик на час" width="53" height="55">
+          <span class="logo_txt">Котик на час</span>
+        </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="#" class="contacts__link">Пушкинская, 28 </a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts__link contacts__link--right">+ 7 928 567 64 54</a>
+            </li>
+          </ul>
+          <button class="header__menubutton" type="button">Открыть меню</button>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list col">
+          <li class="navbar__item">
+            <a href="" class="navbar__link">О нас</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Услуги</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Сертификаты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Условия аренды</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Фото</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Контакты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link navbar__link--callback">Обратный звонок</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="container">
+        <div class="swiper-container">
+          <ul class="swiper-wrapper promo__slider">
+            <li class="swiper-slide promo__item">
+              <img src="img/slide1.jpg" alt=""  width="1140" height="488">
+            </li>
+            <li class="swiper-slide promo__item">
+              <img src="img/slide2.jpg" alt=""  width="1140" height="488">
+            </li>
+            <li class="swiper-slide promo__item">
+              <img src="img/slide3.jpg" alt=""  width="1140" height="488">
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cats">
+      <div class="container">
+        <h1 class="cats__title">Возьми домой котика</h1>
+        <ul class="cats__list">
+          <li class="cats__item">
+            <a href="">
+              <img src="img/cat1.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+          <li class="cats__item">
+            <a href="#">
+              <img src="img/cat2.jpg" alt="" class="cats__img">
+              <p class="cats__info">Марта, 2 месяца</p>
+            </a>
+          </li>
+          <li class="cats__item cats__item--double-height">
+            <a href="#">
+              <img src="img/cat3.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+          <li class="cats__item cats__item--double-height2">
+            <a href="#">
+              <img src="img/cat4.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+          <li class="cats__item">
+            <a href="#">
+              <img src="img/cat5.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+          <li class="cats__item">
+            <a href="#">
+              <img src="img/cat6.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+          <li class="cats__item">
+            <a href="#">
+              <img src="img/cat7.jpg" alt="" class="cats__img">
+              <p class="cats__info">Люси, 3 года</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <!-- <div class="row"> -->
+        <a href="#" class="footer__privacy-policy col-xl-6">
+          Политика конфиденциальности
+        </a>
+        <ul class="footer__contacts__list col-xl-6">
+          <li class="footer__contacts__item">
+            <a href="#" class="footer__contacts__link">Пушкинская, 28 </a>
+          </li>
+          <li class="footer__contacts__item">
+            <a href="#" class="footer__contacts__link">+ 7 928 567 64 54</a>
+          </li>
+        </ul>
+      <!-- </div> -->
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказ обратного звонка</h2>
+      <form action="get" class="popup__form form">
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="name" class="form__txt">Имя</label>
+            <input type="text" class="form__input" name="name" id="name">
+          </li>
+          <li class="form__item">
+            <label for="tel" class="form__txt">Телефон</label>
+            <input type="tel" class="form__input" name="phonenumber" id="tel">
+          </li>
+          <li class="form__item">
+            <button type="submit" class="form__input form__input--btn">Отправить</button>
+          </li>
+        </ul>
+      </form>
+      <button class="popup__close" type="button" >Закрыть окно</button>
+    </div>
+  </section>
+  <script src="js/pixel-glass.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
