@@ -23,7 +23,6 @@ menuOpenButton.addEventListener('click', function(evt) {
   navBar.classList.toggle("navbar--show");
 })
 
-
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
